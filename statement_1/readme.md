@@ -27,11 +27,13 @@ Our approach involves the following key steps, as detailed in the `.ipynb` file:
 ### 1. **Data Loading and Exploration**
    - We first loaded the provided dataset (`data.csv`), which contained the alien messages and attributes.
    - A thorough data exploration was performed to understand the structure of the data and check for missing values, data types, etc.
+   - Various plots like the histplot, stripplot, heatmap were plotted to gather more knowledge about the data and perform EDA.
+   - The data was found to be really simple without sematic relationships between words and that the messages were random.
 
 ### 2. **Preprocessing**
    - To prepare the data for machine learning, we cleaned and preprocessed the dataset by:
      - Encoding the categorical data (like the tail attribute) into numerical form.
-     - Tokenizing and vectorizing the alien messages into numeric features that could be used by machine learning models.
+     - Tokenizing and vectorizing the alien messages into numeric features that could be used by machine learning models. (Not for the final subumission)
 
 ### 3. **Feature Engineering**
    - We engineered additional features from the message text and the physical characteristics of the aliens.
@@ -42,11 +44,14 @@ Our approach involves the following key steps, as detailed in the `.ipynb` file:
      - **Decision Trees**
      - **Random Forest Classifier**
      - **Support Vector Machine (SVM)**
+     - **Transformer based Neural Network**
+     - **LSTM based neural network**
+     - **Manual Classification by self-made algorithm**
    - After evaluating the performance of each model using accuracy metrics and cross-validation, we selected the model with the best results.
 
 ### 5. **Prediction and Result Saving**
    - The chosen model was used to predict the alien species for the test dataset.
-   - The results were saved in a `result.csv` file, as required by the problem statement.
+   - The results were saved in a `submission.csv` file, as required by the problem statement.
 
 ---
 
